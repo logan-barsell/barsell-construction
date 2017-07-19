@@ -1,0 +1,238 @@
+/*---Nav-Bars---*/
+
+html, body{
+	height: 100%;
+	background-image: url('images/background/background.jpg');
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+	font-family: 'Alegreya SC';
+}
+
+
+nav {
+	text-shadow: 1px 1px black;
+	background-color: #f9fbfa;
+	opacity: .8;
+}
+
+#nav-1 {
+	height: 185px;
+}
+
+nav ul a {
+	color: #c85d59;
+	font-size: 20px;
+	height: 66px;
+	position: relative;
+}
+
+.brand-logo img {
+	height: 179px;
+}
+
+#nav-contact {
+	height: 119px;
+}
+
+#tocall{
+	margin-top: 20px;
+}
+
+#nav-contact p { 
+	color: #2c79c7;
+	height: 27px;
+	margin: 0px;
+}
+
+#nav-contact span {
+	margin-right: 20px;
+	color: #2c79c7;
+}
+
+#nav-contact p:hover { 
+	text-decoration: underline;
+}
+
+#nav-contact i:hover {
+	color: #2c79c7;
+}
+
+#nav-contact span:hover {
+	color: #c85d59;
+}
+
+#nav-2 {
+	opacity: .8;
+}
+
+.collapsible-header {
+	background-color: #2c79c7;
+	color: white;
+	text-shadow: 1px 1px black;
+	font-size: 22px;
+}
+
+.collapsible-body {
+	padding: 0px;
+}
+
+.collection a.collection-item {
+	color: #2c79c7;
+	text-shadow: .5px .5px black;
+	font-size: 17px;
+}
+
+.collection .collection-item.active {
+	background-color: #c0bdba;
+	color: #2c79c7;
+}
+
+#home {
+	opacity: .8;
+}
+
+.img-container {
+	max-width: 300px;
+	margin: auto;
+}
+
+#home img {
+	max-width: 300px;
+}
+
+#home h4 {
+	color: #2c79c7;
+	text-shadow: 2px 2px black;
+}
+
+#home span {
+	color: #2c79c7;
+	text-shadow: 2px 2px black;
+	font-size: 30px;
+}
+
+#home p {
+	color: white;
+	text-shadow: 1px 1px black;
+	font-size: 25px;
+}
+
+#services .collapsible {
+	opacity: .8;
+}
+
+ul.collapsible.popout li:hover {
+	box-shadow: 2px 2px 6px black;
+}
+
+ul.collapsible.popout li .collapsible-header {
+	border: 5px outset #2c79c7;
+	margin-top: 50px;
+}
+
+ul.collapsible.popout li .collapsible-body {
+	background-color: #f9fbfa;
+} 
+
+.collapsible a {
+	font-size: 20px;
+}
+
+.collapsible a:hover {
+	text-decoration: underline;
+}
+
+#gallery h4 {
+	color: #2c79c7;
+	text-shadow: 2px 2px black;
+	font-size: 30px;
+	text-align: center;
+}
+#gallery p {
+	color: #c85d59;
+	text-shadow: 1px 1px black;
+	font-size: 25px;
+	text-align: center;
+}
+
+
+#contact .card {
+	border: 1px solid #2c79c7;
+	overflow: scroll;
+}
+
+
+.card {
+	background-color: #f9fbfa;
+	text-align: center;
+	opacity: .8;
+}
+
+.card-action {
+	font-size: 25px;
+}
+
+
+.pages {
+	margin-top: 25px;
+}
+
+
+
+.carousel .carousel-item {
+	width: 400px;
+	top: -90px;
+	z-index: 0;
+
+}
+
+.header {
+	text-align: center;
+	font-size: 40px;
+	color: #c85d59;
+	text-shadow: 2px 2px white;
+	opacity: .8;
+}
+
+.card-action .email {
+	font-size: 20px;
+	overflow: hidden;
+}
+
+#map {
+	max-height: 500px;
+	max-width: 500px;
+	min-height: 354px;
+	min-width: 227px;
+	margin-top: 7.5px;
+	border: 1px solid #c85d59;
+	opacity: .8;
+}
+
+footer {
+	margin-top: 50px;
+	opacity: .8;
+	text-shadow: 1px 1px black;
+}
+
+.page-footer {
+	background-color: #f9fbfa;
+	color: #c85d59;
+}
+
+.page-footer p {
+	color: #2c79c7;
+}
+
+.back2top:hover {
+	text-decoration: underline;
+}
+
+.footer-links ul li a:hover {
+	text-decoration: underline;
+}
+
+
+
+
