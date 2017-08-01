@@ -99,7 +99,7 @@ nav ul a {
 
 #home h4 {
 	color: #2c79c7;
-	text-shadow: 1px 1px 4px black;
+	text-shadow: 1px 1px black;
 }
 
 #home span {
@@ -181,6 +181,10 @@ ul.collapsible.popout li .collapsible-body {
 	top: -90px;
 	z-index: 0;
 
+}
+
+.carousel-item.active img {
+	box-shadow: 0px 0px 8px #2c79c7;
 }
 
 .header {

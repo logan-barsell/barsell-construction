@@ -155,16 +155,32 @@ $(document).ready( f => {
 
 
 
-	$('#2call').click( f => {
+	$('#tocall').click( f => {
 		window.location.href='tel:+925-260-4331'
 	})
 
-	$('#2email').click( f => {
+	$('#toemail').click( f => {
 		window.location.href='mailto:barsell@construction.com'
 	})
 
-	$('#2fax').click( f => {
-		window.location.href='tel:+(070)412.34.56'
+	$('#tofb').click( f => {
+		window.location.href='www.facebook.com'
+	})
+
+	$('#tolinkedin').click( f => {
+		window.location.href='www.linkedin.com'
+	})
+
+	$('#toworkhands').click( f => {
+		window.location.href='www.workhands.com'
+	})
+
+	$('#toinsta').click( f => {
+		window.location.href='www.instagram.com'
+	})
+
+	$('#totwitter').click( f => {
+		window.location.href='www.twitter.com'
 	})
 
 	$('#home').children('.divider').css({'margin-top':'40px'})
