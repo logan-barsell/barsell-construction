@@ -88,10 +88,6 @@ nav ul a {
 	color: #2c79c7;
 }
 
-#home {
-	opacity: .8;
-}
-
 .img-container {
 	max-width: 300px;
 	margin: auto;
@@ -103,12 +99,12 @@ nav ul a {
 
 #home h4 {
 	color: #2c79c7;
-	text-shadow: 2px 2px black;
+	text-shadow: 1px 1px 4px black;
 }
 
 #home span {
 	color: #2c79c7;
-	text-shadow: 2px 2px black;
+	text-shadow: 1px 1px black;
 	font-size: 30px;
 }
 
@@ -145,7 +141,7 @@ ul.collapsible.popout li .collapsible-body {
 
 #gallery h4 {
 	color: #2c79c7;
-	text-shadow: 2px 2px black;
+	text-shadow: 1px 1px black;
 	font-size: 30px;
 	text-align: center;
 }
@@ -213,7 +209,7 @@ ul.collapsible.popout li .collapsible-body {
 footer {
 	margin-top: 50px;
 	opacity: .8;
-	text-shadow: 1px 1px black;
+	text-shadow: .5px .5px black;
 }
 
 .page-footer {
