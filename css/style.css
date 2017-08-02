@@ -7,6 +7,7 @@ html, body{
 	background-attachment: fixed;
 	background-position: center;
 	font-family: 'Alegreya SC';
+	position: fixed;
 }
 
 
@@ -233,12 +234,6 @@ footer {
 	text-decoration: underline;
 }
 
-@media only screen and (max-width: 400px) {
-	html, body {
-		 background: url('../images/background.jpg') no-repeat center;
-		 background-attachment: scroll;
-	}
-}
 
 
 
