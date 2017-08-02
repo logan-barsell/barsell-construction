@@ -189,7 +189,7 @@ $(document).ready( f => {
 	$('#contact').children('.divider').css({'margin-top':'40px'})
 
 	$('.back2top').click( f => {
-		$(window).scrollTop(0)
+		$("#wrapper").scrollTop(0)
 	})
 
 	$('.carousel a').click( e => {
