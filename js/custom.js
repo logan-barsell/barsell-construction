@@ -164,23 +164,23 @@ $(document).ready( f => {
 	})
 
 	$('#tofb').click( f => {
-		window.location.href='www.facebook.com'
+		window.location.replace('www.facebook.com')
 	})
 
 	$('#tolinkedin').click( f => {
-		window.location.href='www.linkedin.com'
+		window.location.replace('www.linkedin.com')
 	})
 
 	$('#toworkhands').click( f => {
-		window.location.href='www.workhands.com'
+		window.location.replace('www.workhands.com')
 	})
 
 	$('#toinsta').click( f => {
-		window.location.href='www.instagram.com'
+		window.location.replace('www.instagram.com')
 	})
 
 	$('#totwitter').click( f => {
-		window.location.href='www.twitter.com'
+		window.location.replace('www.twitter.com')
 	})
 
 	$('#home').children('.divider').css({'margin-top':'40px'})
