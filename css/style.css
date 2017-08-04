@@ -53,9 +53,8 @@ nav ul a {
 	margin: 0px;
 }
 
-#nav-contact span {
-	margin-right: 20px;
-	color: #2c79c7;
+#tofb {
+	margin-right: 0px; 
 }
 
 #nav-contact p:hover { 
@@ -177,6 +176,10 @@ ul.collapsible.popout li .collapsible-body {
 	font-size: 25px;
 }
 
+.card-action span {
+	color: #eeaa53;
+}
+
 
 .pages {
 	margin-top: 25px;
@@ -241,6 +244,8 @@ footer {
 	text-decoration: underline;
 }
 
-
+@media only screen and (max-width: 1200px) {
+	-webkit-overflow-scrolling: touch; 
+}
 
 
