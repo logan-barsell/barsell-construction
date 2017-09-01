@@ -244,8 +244,5 @@ footer {
 	text-decoration: underline;
 }
 
-@media only screen and (max-width: 1200px) {
-	-webkit-overflow-scrolling: touch; 
-}
 
 

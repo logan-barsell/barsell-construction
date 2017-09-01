@@ -160,27 +160,15 @@ $(document).ready( f => {
 	})
 
 	$('#toemail').click( f => {
-		window.location.href='mailto:barsell@construction.com'
+		window.location.href='mailto:johnbarsell@yahoo.com'
 	})
 
 	$('#tofb').click( f => {
-		window.location.href='www.facebook.com'
+		window.location.href='http://www.facebook.com'
 	})
 
 	$('#tolinkedin').click( f => {
-		window.location.href = 'www.linkedin.com'
-	})
-
-	$('#toworkhands').click( f => {
-		window.location.href = 'www.workhands.com'
-	})
-
-	$('#toinsta').click( f => {
-		window.location.href = 'www.instagram.com'
-	})
-
-	$('#totwitter').click( f => {
-		window.location.href = 'www.twitter.com'
+		window.location.href = 'http:https://www.linkedin.com/in/john-barsell-1601891b/'
 	})
 
 	$('#home').children('.divider').css({'margin-top':'40px'})
