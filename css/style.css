@@ -105,7 +105,7 @@ nav ul a {
 }
 
 #home h4 {
-	color: #2c79c7;
+	color: white;
 	text-shadow: 1px 1px black;
 }
 
@@ -125,9 +125,7 @@ nav ul a {
 	opacity: .8;
 }
 
-ul.collapsible.popout li:hover {
-	box-shadow: 2px 2px 6px black;
-}
+
 
 ul.collapsible.popout li .collapsible-header {
 	border: 5px outset #2c79c7;
@@ -161,7 +159,6 @@ ul.collapsible.popout li .collapsible-body {
 
 
 #contact .card {
-	border: 1px solid #2c79c7;
 	overflow: scroll;
 }
 
@@ -185,24 +182,23 @@ ul.collapsible.popout li .collapsible-body {
 	margin-top: 25px;
 }
 
+.carousel {
+	top: -55px;
+}
 
 
 .carousel .carousel-item {
 	width: 400px;
-	top: -90px;
 	z-index: 0;
 
 }
 
-.carousel-item.active img {
-	box-shadow: 0px 0px 8px #2c79c7;
-}
 
 .header {
 	text-align: center;
 	font-size: 40px;
-	color: #c85d59;
-	text-shadow: 1px 1px white;
+	color: white;
+	text-shadow: 1px 1px black;
 	opacity: .8;
 }
 
@@ -217,7 +213,6 @@ ul.collapsible.popout li .collapsible-body {
 	min-height: 354px;
 	min-width: 227px;
 	margin-top: 7.5px;
-	border: 1px solid #c85d59;
 	opacity: .8;
 }
 
@@ -238,6 +233,7 @@ footer {
 
 .back2top:hover {
 	text-decoration: underline;
+	cursor: pointer;
 }
 
 .footer-links ul li a:hover {
