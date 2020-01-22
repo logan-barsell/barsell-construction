@@ -4,7 +4,8 @@ var initMap = f => {
     var uluru = {lat:37.8560563 , lng:-122.029141}
     var map = new google.maps.Map(document.getElementById('map'), {
       zoom: 9,
-      center: uluru
+      center: uluru,
+
     })
     var marker = new google.maps.Marker({
       position: uluru,
@@ -14,9 +15,7 @@ var initMap = f => {
 
 $(document).ready( f => {
 
-
-	
-
+	$('.carousel').carousel()
 	$('#services').hide()
 	$('#gallery').hide()
 	$('#contact').hide()
@@ -48,6 +47,7 @@ $(document).ready( f => {
 		$('.contact').show()
 		$('.fa-mobile').hide()
 		$('.collapsible').collapsible('close', 0)
+		// $('#wrapper').scrollTop(1000)
 	})
 
 	$('.link2services').click( f => {
@@ -75,6 +75,7 @@ $(document).ready( f => {
 	})
 
 	$('.link2gallery').click( f => {
+
 		$('#home').hide()
 		$('#services').hide()
 		$('#gallery').show()
@@ -96,7 +97,7 @@ $(document).ready( f => {
 		$('.contact').show()
 		$('.fa-mobile').hide()
 		$('.collapsible').collapsible('close', 0)
-		$('.carousel').carousel()
+		$('.carousel').carousel('next')
 	})
 
 	$('.link2contact').click( f => {
@@ -126,7 +127,7 @@ $(document).ready( f => {
 
 
 	$(window).resize( f => {
-
+	
 		var w = $(window).width()
 
 		if (w < 1233) {
@@ -168,7 +169,7 @@ $(document).ready( f => {
 	})
 
 	$('#tolinkedin').click( f => {
-		window.location.href = 'http:https://www.linkedin.com/in/john-barsell-1601891b/'
+		window.location.href = 'https://www.linkedin.com/in/john-barsell-1601891b/'
 	})
 
 	$('#home').children('.divider').css({'margin-top':'40px'})
@@ -183,6 +184,29 @@ $(document).ready( f => {
 	$('.carousel a').click( e => {
 		e.preventDefault()
 	})
+
+
+	var remodels = $('.servicesList li').first()
+	var additions = $('.servicesList li:nth-child(2)')
+	var kitchens = $('.servicesList li:nth-child(3)')
+	var bathrooms = $('.servicesList li:nth-child(4)')
+	var doors = $('.servicesList li:nth-child(5)')
+	var windows = $('.servicesList li:nth-child(6)')
+	var cabanas = $('.servicesList li:nth-child(7)')
+	var decks = $('.servicesList li:nth-child(8)')
+	var repairs = $('.servicesList li:nth-child(9)')
+
+	var remodelsPo = remodels.position().top
+	var additionsPo = additions.position().top
+	var kitchensPo = kitchens.position().top
+	var bathroomsPo = bathrooms.position().top
+	var doorsPo = doors.position().top
+	var windowsPo = windows.position().top
+	var cabanasPo = cabanas.position().top
+	var decksPo = decks.position().top
+	var repairsPo = repairs.position().top
+
+
 
 })
 

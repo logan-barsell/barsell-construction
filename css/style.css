@@ -11,6 +11,10 @@ html, body{
 	position: fixed;
 }
 
+a {
+ color: orange;
+}
+
 #wrapper {
 	width: 100%;
 	height: 100%;
@@ -20,8 +24,9 @@ html, body{
 
 nav {
 	text-shadow: 1px 1px black;
-	background-color: #f9fbfa;
+	background-color: rgba(0, 0, 0, 0.4);
 	opacity: .8;
+	border: 1px solid orange;
 }
 
 #nav-1 {
@@ -29,7 +34,7 @@ nav {
 }
 
 nav ul a {
-	color: #c85d59;
+	color: white;
 	font-size: 20px;
 	height: 66px;
 	position: relative;
@@ -48,7 +53,7 @@ nav ul a {
 }
 
 #nav-contact p { 
-	color: #2c79c7;
+	color: orange;
 	height: 27px;
 	margin: 0px;
 }
@@ -62,11 +67,11 @@ nav ul a {
 }
 
 #nav-contact i:hover {
-	color: #2c79c7;
+	color: orange;
 }
 
 #nav-contact span:hover {
-	color: #c85d59;
+	color: orange;
 }
 
 #nav-2 {
@@ -74,7 +79,7 @@ nav ul a {
 }
 
 .collapsible-header {
-	background-color: #2c79c7;
+	background-color: orange;
 	color: white;
 	text-shadow: 1px 1px black;
 	font-size: 22px;
@@ -84,15 +89,30 @@ nav ul a {
 	padding: 0px;
 }
 
+
+#services ul li {
+	font-size: 33px;
+	color: white;
+	text-shadow: 1px 1px black;
+	margin: 13px 0px;
+}
+
+
 .collection a.collection-item {
-	color: #2c79c7;
+	color: white;
 	text-shadow: .5px .5px black;
 	font-size: 17px;
+	border-bottom: none;
+	background-color: transparent;
 }
 
 .collection .collection-item.active {
-	background-color: #c0bdba;
-	color: #2c79c7;
+	color: orange;
+	background-color: rgba(0, 0, 0, 0.4);
+}
+
+.collection a.collection-item:not(.active):hover {
+	background-color: rgba(0, 0, 0, 0.4);
 }
 
 .img-container {
@@ -164,17 +184,27 @@ ul.collapsible.popout li .collapsible-body {
 
 
 .card {
-	background-color: #f9fbfa;
+	background-color: rgba(0, 0, 0, 0.4);
 	text-align: center;
 	opacity: .8;
+	border: 1px solid white;
 }
 
-.card-action {
+.card .card-action {
 	font-size: 25px;
+	padding: 16px 7px;
 }
 
 .card-action span {
-	color: #eeaa53;
+	color: orange;
+}
+
+.card-title {
+	color: white;
+}
+
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-large):not(.btn-floating) {
+	color: orange;
 }
 
 
@@ -220,15 +250,16 @@ footer {
 	margin-top: 50px;
 	opacity: .8;
 	text-shadow: .5px .5px black;
+	border: 1px solid orange;
 }
 
 .page-footer {
-	background-color: #f9fbfa;
-	color: #c85d59;
+	background-color: rgba(0, 0, 0, 0.5);
+	color: white;
 }
 
 .page-footer p {
-	color: #2c79c7;
+	color: orange;
 }
 
 .back2top:hover {
@@ -240,5 +271,8 @@ footer {
 	text-decoration: underline;
 }
 
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-large):not(.btn-floating) {
+	margin-right: 0px;
+}
 
 
