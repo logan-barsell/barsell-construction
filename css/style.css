@@ -52,10 +52,21 @@ nav ul a {
 	margin-top: 20px;
 }
 
+#toemail {
+	position: relative;
+	z-index: 100;
+}
+
+#tolinkedin {
+	position: relative;
+	z-index: 0;
+}
+
 #nav-contact p { 
 	color: orange;
-	height: 27px;
+	height: 0px;
 	margin: 0px;
+	margin-bottom: 30px;
 }
 
 #tofb {
@@ -120,6 +131,68 @@ nav ul a {
 	margin: auto;
 }
 
+#home .col.center {
+	background-color: rgba(0, 0, 0, 0.4);
+	float: none;
+	width: 90%;
+	margin: auto;
+	padding: 20px;
+}
+
+hr {
+	border: 1px solid black;
+	opacity: .4;
+}
+
+#missionStatements {
+	height: 111px;
+	overflow: scroll;
+}
+
+#missionStatements p:last-child {
+	margin-bottom: 0px;
+}
+
+#missionStatements p:first-child {
+	margin-top: 17px;
+}
+
+@media only screen and (max-width: 1154px) {
+	#missionStatements p:first-child {
+	margin-top: 8px;
+	}
+}
+
+@media only screen and (max-width: 950px) {
+	#missionStatements p:first-child {
+	margin-top: 0px;
+	}
+}
+
+@media only screen and (max-width: 643px) {
+	#missionStatements {
+	height: 141px;
+	}
+}
+
+@media only screen and (max-width: 472px) {
+	#missionStatements {
+	height: 172px;
+	}
+}
+
+@media only screen and (max-width: 400px) {
+	#missionStatements {
+	height: 211px;
+	}
+}
+
+@media only screen and (max-width: 397px) {
+	#missionStatements {
+	height: 244px;
+	}
+}
+
 #home img {
 	max-width: 300px;
 }
@@ -130,7 +203,7 @@ nav ul a {
 }
 
 #home span {
-	color: #2c79c7;
+	color: orange;
 	text-shadow: 1px 1px black;
 	font-size: 30px;
 }
@@ -139,6 +212,17 @@ nav ul a {
 	color: white;
 	text-shadow: 1px 1px black;
 	font-size: 25px;
+}
+
+#title {
+	font-size: 22px;
+}
+
+#name {
+	font-size: 44px;
+	text-shadow: 1px 1px orange;
+	font-style: italic;
+	font-family: cursive;
 }
 
 #services .collapsible {
@@ -186,8 +270,6 @@ ul.collapsible.popout li .collapsible-body {
 .card {
 	background-color: rgba(0, 0, 0, 0.4);
 	text-align: center;
-	opacity: .8;
-	border: 1px solid white;
 }
 
 .card .card-action {
@@ -223,6 +305,10 @@ ul.collapsible.popout li .collapsible-body {
 
 }
 
+.carousel-item img {
+	opacity: .9
+}
+
 
 .header {
 	text-align: center;
@@ -243,7 +329,7 @@ ul.collapsible.popout li .collapsible-body {
 	min-height: 354px;
 	min-width: 227px;
 	margin-top: 7.5px;
-	opacity: .8;
+	opacity: .7;
 }
 
 footer {
