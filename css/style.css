@@ -144,10 +144,6 @@ hr {
 	opacity: .4;
 }
 
-#missionStatements {
-	height: 111px;
-	overflow: scroll;
-}
 
 #missionStatements p:last-child {
 	margin-bottom: 0px;
@@ -169,28 +165,9 @@ hr {
 	}
 }
 
-@media only screen and (max-width: 643px) {
-	#missionStatements {
-	height: 141px;
-	}
-}
-
-@media only screen and (max-width: 472px) {
-	#missionStatements {
-	height: 172px;
-	}
-}
-
-@media only screen and (max-width: 400px) {
-	#missionStatements {
-	height: 211px;
-	}
-}
-
-@media only screen and (max-width: 397px) {
-	#missionStatements {
-	height: 244px;
-	}
+#missionStatements.carousel.carousel-slider .carousel-item {
+	height: auto;
+	min-height: unset;
 }
 
 #home img {

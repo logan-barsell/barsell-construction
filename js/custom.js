@@ -15,7 +15,7 @@ var initMap = f => {
 
 $(document).ready( f => {
 
-	$('.carousel').carousel()
+	// $('.carousel').carousel()
 	$('#services').hide()
 	$('#gallery').hide()
 	$('#contact').hide()
@@ -138,6 +138,10 @@ $(document).ready( f => {
 			$('#nav-1').find('li').slideDown()
 			$('#nav-2').slideUp()
 		}
+
+    	var slideHeight = $('#missionStatements .carousel-item.active').height()
+    	$('#missionStatements.carousel').css('height', slideHeight+63+'px')
+
 	})
 
 	var w = $(window).width()
@@ -206,7 +210,24 @@ $(document).ready( f => {
 	var decksPo = decks.position().top
 	var repairsPo = repairs.position().top
 
+	$('.carousel.carousel-slider').carousel({
+	    fullWidth: true,
+	    indicators: true,
+	    onCycleTo: function(){
+	    	//finds height of slide and adjusts height of carousel
+	    	var slideHeight = $('#missionStatements .carousel-item.active').height()
+	    	$('#missionStatements.carousel').css('height', slideHeight+63+'px')
+	    }
+    })
+
+    // setInterval(function() {
+    // 	//changes to next slide every 10 seconds
+    // 	$('#missionStatements.carousel').carousel('next')
+   	// 	}, 10000)
 
 
+
+
+    	
 })
 
