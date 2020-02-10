@@ -131,12 +131,12 @@ $(document).ready( f => {
 		var w = $(window).width()
 
 		if (w < 1233) {
-			$('#nav-1').find('li').slideUp()
-			$('#nav-2').slideDown()
+			$('#nav-1').find('li').slideUp(100, 'linear')
+			$('#nav-2').slideDown(100, 'linear')
 		}
 		if (w > 1233) {
-			$('#nav-1').find('li').slideDown()
-			$('#nav-2').slideUp()
+			$('#nav-1').find('li').slideDown(100, 'linear')
+			$('#nav-2').slideUp(100, 'linear')
 		}
 
     	var slideHeight = $('#missionStatements .carousel-item.active').height()
@@ -147,14 +147,17 @@ $(document).ready( f => {
 	var w = $(window).width()
 
 	if (w < 1233) {
-		$('#nav-1').find('li').slideUp()
-		$('#nav-2').slideDown()
+		$('#nav-1').find('li').slideUp(100, 'linear')
+		$('#nav-2').slideDown(100, 'linear')
 	}
 
 	if (w > 1233) {
-		$('#nav-1').find('li').slideDown()
-		$('#nav-2').slideUp()
+		$('#nav-1').find('li').slideDown(100, 'linear')
+		$('#nav-2').slideUp(100, 'linear')
 	}
+
+	var slideHeight = $('#missionStatements .carousel-item.active').height()
+    	$('#missionStatements.carousel').css('height', slideHeight+63+'px')
 
 
 
