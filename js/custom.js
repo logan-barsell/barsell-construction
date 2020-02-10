@@ -98,7 +98,7 @@ $(document).ready( f => {
 		$('.contact').show()
 		$('.fa-mobile').hide()
 		$('.collapsible').collapsible('close', 0)
-		$('#galleryCarousel.carousel').carousel('next')
+		$('#galleryCarousel').carousel('set', 0)
 	})
 
 	$('.link2contact').click( f => {
