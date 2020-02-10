@@ -168,6 +168,11 @@ hr {
 #missionStatements.carousel.carousel-slider .carousel-item {
 	height: auto;
 	min-height: unset;
+	visibility: hidden;
+}
+
+#missionStatements.carousel.carousel-slider .carousel-item.active {
+	visibility: visible;
 }
 
 #home img {

@@ -213,6 +213,7 @@ $(document).ready( f => {
 	$('.carousel.carousel-slider').carousel({
 	    fullWidth: true,
 	    indicators: true,
+	    duration: 100,
 	    onCycleTo: function(){
 	    	//finds height of slide and adjusts height of carousel
 	    	var slideHeight = $('#missionStatements .carousel-item.active').height()
@@ -220,10 +221,10 @@ $(document).ready( f => {
 	    }
     })
 
-    // setInterval(function() {
-    // 	//changes to next slide every 10 seconds
-    // 	$('#missionStatements.carousel').carousel('next')
-   	// 	}, 10000)
+    setInterval(function() {
+    	//changes to next slide every 10 seconds
+    	$('#missionStatements.carousel').carousel('next')
+   		}, 10000)
 
 
 
