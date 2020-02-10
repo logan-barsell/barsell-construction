@@ -15,7 +15,7 @@ var initMap = f => {
 
 $(document).ready( f => {
 
-	// $('.carousel').carousel()
+	$('#galleryCarousel').carousel()
 	$('#services').hide()
 	$('#gallery').hide()
 	$('#contact').hide()
@@ -47,7 +47,8 @@ $(document).ready( f => {
 		$('.contact').show()
 		$('.fa-mobile').hide()
 		$('.collapsible').collapsible('close', 0)
-		// $('#wrapper').scrollTop(1000)
+		var slideHeight = $('#missionStatements .carousel-item.active').height()
+	    $('#missionStatements.carousel').css('height', slideHeight+63+'px')
 	})
 
 	$('.link2services').click( f => {
@@ -97,7 +98,7 @@ $(document).ready( f => {
 		$('.contact').show()
 		$('.fa-mobile').hide()
 		$('.collapsible').collapsible('close', 0)
-		$('.carousel').carousel('next')
+		$('#galleryCarousel.carousel').carousel('next')
 	})
 
 	$('.link2contact').click( f => {
@@ -213,7 +214,7 @@ $(document).ready( f => {
 	var decksPo = decks.position().top
 	var repairsPo = repairs.position().top
 
-	$('.carousel.carousel-slider').carousel({
+	$('#missionStatements').carousel({
 	    fullWidth: true,
 	    indicators: true,
 	    duration: 100,
