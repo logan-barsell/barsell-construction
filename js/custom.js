@@ -16,6 +16,7 @@ var initMap = f => {
 $(document).ready( f => {
 
 	$('#galleryCarousel').carousel()
+
 	$('#services').hide()
 	$('#gallery').hide()
 	$('#contact').hide()
@@ -80,6 +81,7 @@ $(document).ready( f => {
 		$('#home').hide()
 		$('#services').hide()
 		$('#gallery').show()
+		$('.tabs').tabs()
 		$('#contact').hide()
 		$('.link2gallery').parent().addClass('active')
 		$('.link2home').parent().removeClass('active')

@@ -243,6 +243,38 @@ ul.collapsible.popout li .collapsible-body {
 	text-align: center;
 }
 
+#galleryPictures img {
+	width: 100%;
+	opacity: .9;
+}
+
+.tabs {
+	background-color: transparent;
+	width: unset;
+}
+
+.tabs .tab a {
+	color: white;
+	font-size: 22px;
+	text-shadow: .5px .5px black;
+	opacity: .9;
+}
+
+.tabs .tab a.active {
+	color: white;
+}
+
+.tabs .tab a:hover {
+	color: white;
+}
+
+.tabs .indicator {
+	background-color: white;
+}
+
+#galleryPictures .row .col:first-child {
+	margin-bottom: 20px;
+}
 
 #contact .card {
 	overflow: scroll;
