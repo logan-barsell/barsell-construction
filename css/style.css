@@ -108,22 +108,38 @@ nav ul a {
 	margin: 13px 0px;
 }
 
+#services .card-content {
+	color: white;
+	font-size: 20px;
+}
+
+#services .card-title {
+	width: 100%;
+	font-size: 27px;
+	background-color: rgba(0, 0, 0, 0.4);
+	text-shadow: 1px 1px black;
+}
+
+#services .card img {
+	opacity: .9;
+}
+
 
 .collection a.collection-item {
 	color: white;
 	text-shadow: .5px .5px black;
 	font-size: 17px;
 	border-bottom: none;
-	background-color: transparent;
+	background-color: rgba(0, 0, 0, 0.4);
 }
 
 .collection .collection-item.active {
 	color: orange;
-	background-color: rgba(0, 0, 0, 0.4);
+	background-color: rgba(0, 0, 0, 0.5);
 }
 
 .collection a.collection-item:not(.active):hover {
-	background-color: rgba(0, 0, 0, 0.4);
+	background-color: rgba(0, 0, 0, 0.5);
 }
 
 .img-container {

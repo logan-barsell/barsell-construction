@@ -196,25 +196,6 @@ $(document).ready( f => {
 	})
 
 
-	var remodels = $('.servicesList li').first()
-	var additions = $('.servicesList li:nth-child(2)')
-	var kitchens = $('.servicesList li:nth-child(3)')
-	var bathrooms = $('.servicesList li:nth-child(4)')
-	var doors = $('.servicesList li:nth-child(5)')
-	var windows = $('.servicesList li:nth-child(6)')
-	var cabanas = $('.servicesList li:nth-child(7)')
-	var decks = $('.servicesList li:nth-child(8)')
-	var repairs = $('.servicesList li:nth-child(9)')
-
-	var remodelsPo = remodels.position().top
-	var additionsPo = additions.position().top
-	var kitchensPo = kitchens.position().top
-	var bathroomsPo = bathrooms.position().top
-	var doorsPo = doors.position().top
-	var windowsPo = windows.position().top
-	var cabanasPo = cabanas.position().top
-	var decksPo = decks.position().top
-	var repairsPo = repairs.position().top
 
 	$('#missionStatements').carousel({
 	    fullWidth: true,
