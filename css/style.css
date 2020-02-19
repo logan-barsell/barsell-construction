@@ -96,6 +96,10 @@ nav ul a {
 	font-size: 22px;
 }
 
+.collapsible-header:hover {
+	opacity: .9;
+}
+
 .collapsible-body {
 	padding: 0px;
 }
@@ -116,12 +120,13 @@ nav ul a {
 #services .card-title {
 	width: 100%;
 	font-size: 27px;
-	background-color: rgba(0, 0, 0, 0.4);
+	background-color: rgba(0, 0, 0, 0.5);
 	text-shadow: 1px 1px black;
 }
 
 #services .card img {
 	opacity: .9;
+	box-shadow: 0px 0px 40px;
 }
 
 
@@ -135,11 +140,11 @@ nav ul a {
 
 .collection .collection-item.active {
 	color: orange;
-	background-color: rgba(0, 0, 0, 0.5);
+	background-color: rgba(0, 0, 0, 0.7);
 }
 
 .collection a.collection-item:not(.active):hover {
-	background-color: rgba(0, 0, 0, 0.5);
+	background-color: rgba(0, 0, 0, 0.6);
 }
 
 .img-container {
@@ -233,6 +238,8 @@ ul.collapsible.popout li .collapsible-header {
 	border: 5px outset #2c79c7;
 	margin-top: 50px;
 }
+
+
 
 ul.collapsible.popout li .collapsible-body {
 	background-color: #f9fbfa;

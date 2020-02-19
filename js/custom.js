@@ -160,7 +160,7 @@ $(document).ready( f => {
 	}
 
 	var slideHeight = $('#missionStatements .carousel-item.active').height()
-    	$('#missionStatements.carousel').css('height', slideHeight+63+'px')
+    $('#missionStatements.carousel').css('height', slideHeight+63+'px')
 
 
 
@@ -207,6 +207,11 @@ $(document).ready( f => {
 	    	$('#missionStatements.carousel').css('height', slideHeight+63+'px')
 	    }
     })
+
+	$('#missionStatements.carousel').carousel('set','0')
+	var slideHeight = $('#missionStatements .carousel-item.active').height()
+    $('#missionStatements.carousel').css('height', slideHeight+63+'px')
+	
 
     setInterval(function() {
     	//changes to next slide every 10 seconds
