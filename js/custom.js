@@ -26,6 +26,12 @@ $(document).ready( f => {
 	$('#nav-contact i').show().css({'margin-right':'20px'})
 	$('.fa-home').show()
 
+	var findSetHeight = () => {
+		var slideHeight = $('#missionStatements .carousel-item.active').height()
+	    $('#missionStatements.carousel').css('height', slideHeight+63+'px')
+	}
+	findSetHeight()
+
 	$('.link2home').click( f => {
 		$('#home').show()
 		$('#services').hide()
@@ -48,8 +54,7 @@ $(document).ready( f => {
 		$('.contact').show()
 		$('.fa-mobile').hide()
 		$('.collapsible').collapsible('close', 0)
-		var slideHeight = $('#missionStatements .carousel-item.active').height()
-	    $('#missionStatements.carousel').css('height', slideHeight+63+'px')
+		findSetHeight()
 	})
 
 	$('.link2services').click( f => {
@@ -142,8 +147,7 @@ $(document).ready( f => {
 			$('#nav-2').slideUp(100, 'linear')
 		}
 
-    	var slideHeight = $('#missionStatements .carousel-item.active').height()
-    	$('#missionStatements.carousel').css('height', slideHeight+63+'px')
+    	findSetHeight()
 
 	})
 
@@ -159,8 +163,7 @@ $(document).ready( f => {
 		$('#nav-2').slideUp(100, 'linear')
 	}
 
-	var slideHeight = $('#missionStatements .carousel-item.active').height()
-    $('#missionStatements.carousel').css('height', slideHeight+63+'px')
+	findSetHeight()
 
 
 
@@ -203,14 +206,12 @@ $(document).ready( f => {
 	    duration: 100,
 	    onCycleTo: function(){
 	    	//finds height of slide and adjusts height of carousel
-	    	var slideHeight = $('#missionStatements .carousel-item.active').height()
-	    	$('#missionStatements.carousel').css('height', slideHeight+63+'px')
+	    	findSetHeight()
 	    }
     })
 
 	$('#missionStatements.carousel').carousel('set','0')
-	var slideHeight = $('#missionStatements .carousel-item.active').height()
-    $('#missionStatements.carousel').css('height', slideHeight+63+'px')
+	findSetHeight()
 	
 
     setInterval(function() {
