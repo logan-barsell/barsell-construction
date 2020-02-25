@@ -15,8 +15,6 @@ var initMap = f => {
 
 $(document).ready( f => {
 
-	$('#galleryCarousel').carousel()
-
 	$('#services').hide()
 	$('#gallery').hide()
 	$('#contact').hide()
@@ -138,13 +136,17 @@ $(document).ready( f => {
 
 	var resizeFunctions = () => {
 		var w = $(window).width()
-
-		if (w < 1233) {
+		$('.brand-logo .logo2').hide()
+		if (w < 1050) {
 			$('#nav-1').find('li').hide()
+			$('#nav-1').css('height','261px')
+			$('.brand-logo .logo2').show()
 			$('#nav-2').show()
 		}
-		if (w > 1233) {
+		if (w > 1050) {
 			$('#nav-1').find('li').show()
+			$('#nav-1').css('height','185px')
+			$('.brand-logo .logo2').hide()
 			$('#nav-2').hide()
 		}
 
@@ -221,6 +223,7 @@ $(document).ready( f => {
 		}
     })
 
+	$('#missionStatements.carousel').carousel('set', 0)
 	findSetHeight()
 	
 

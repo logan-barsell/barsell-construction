@@ -25,7 +25,7 @@ a {
 nav {
 	text-shadow: 1px 1px black;
 	background-color: rgba(0, 0, 0, 0.4);
-	opacity: .8;
+/*	opacity: .8;*/
 	border: 1px solid orange;
 }
 
@@ -38,11 +38,27 @@ nav ul a {
 	font-size: 20px;
 	height: 66px;
 	position: relative;
+	padding: 0px 14px;
 }
 
-.brand-logo img {
+
+.brand-logo .logo1 {
 	height: 179px;
 	margin-top: 3px;
+}
+
+.logo2 {
+	height: 60px;
+	width: 207px;
+	margin: 13px auto;
+}
+
+.brand-logo .logo2 {
+	height: 77px;
+	width: 250px;
+	position: absolute;
+	top: 168px;
+	left: -35px;
 }
 
 #nav-contact {
@@ -175,9 +191,24 @@ hr {
 	margin-top: 17px;
 }
 
+@media only screen and (max-width: 1200px) {
+	nav ul a {
+		padding: 0px 12px;
+	}
+}
+
 @media only screen and (max-width: 1154px) {
 	#missionStatements p:first-child {
 	margin-top: 8px;
+	}
+	nav ul a {
+		padding: 0px 10px;
+	}
+}
+
+@media only screen and (max-width: 1100px) {
+	nav ul a {
+		padding: 0px 8px;
 	}
 }
 
@@ -352,8 +383,7 @@ ul.collapsible.popout li .collapsible-body {
 	text-align: center;
 	font-size: 40px;
 	color: white;
-	text-shadow: 1px 1px black;
-	opacity: .8;
+	text-shadow: 1px 1px 4px black;
 }
 
 .card-action .email {
@@ -372,7 +402,6 @@ ul.collapsible.popout li .collapsible-body {
 
 footer {
 	margin-top: 50px;
-	opacity: .8;
 	text-shadow: .5px .5px black;
 	border: 1px solid orange;
 }
