@@ -20,11 +20,12 @@ $(document).ready( f => {
 	$('#services').hide()
 	$('#gallery').hide()
 	$('#contact').hide()
-	$('#link2home').parent().addClass('active')
+	$('.link2home').addClass('active')
 	$('.home').hide()
 	$('nav i').hide()
 	$('#nav-contact i').show().css({'margin-right':'20px'})
 	$('.fa-home').show()
+
 
 	var findSetHeight = () => {
 		var slideHeight = $('#missionStatements .carousel-item.active').height()
@@ -133,37 +134,35 @@ $(document).ready( f => {
 		initMap()
 	})
 
+	//declaring functions to call when screen is resizing
 
-	$(window).resize( f => {
-	
+	var resizeFunctions = () => {
 		var w = $(window).width()
 
 		if (w < 1233) {
-			$('#nav-1').find('li').slideUp(100, 'linear')
-			$('#nav-2').slideDown(100, 'linear')
+			$('#nav-1').find('li').hide()
+			$('#nav-2').show()
 		}
 		if (w > 1233) {
-			$('#nav-1').find('li').slideDown(100, 'linear')
-			$('#nav-2').slideUp(100, 'linear')
+			$('#nav-1').find('li').show()
+			$('#nav-2').hide()
 		}
 
     	findSetHeight()
+	}
+
+	// initial call of resize functions
+	resizeFunctions()
+
+	$(window).resize( f => {
+		//calling resize functions on resize
+		resizeFunctions()
 
 	})
 
-	var w = $(window).width()
+	
 
-	if (w < 1233) {
-		$('#nav-1').find('li').slideUp(100, 'linear')
-		$('#nav-2').slideDown(100, 'linear')
-	}
-
-	if (w > 1233) {
-		$('#nav-1').find('li').slideDown(100, 'linear')
-		$('#nav-2').slideUp(100, 'linear')
-	}
-
-	findSetHeight()
+	
 
 
 
@@ -200,6 +199,12 @@ $(document).ready( f => {
 
 
 
+	var slideQueue = setInterval(function() {
+    	//changes to next slide every 10 seconds
+    	$('#missionStatements.carousel').carousel('next')
+   		}, 10000)
+
+
 	$('#missionStatements').carousel({
 	    fullWidth: true,
 	    indicators: true,
@@ -207,17 +212,19 @@ $(document).ready( f => {
 	    onCycleTo: function(){
 	    	//finds height of slide and adjusts height of carousel
 	    	findSetHeight()
-	    }
+	    	//resets the slide queue
+	    	clearInterval(slideQueue)
+	    	slideQueue = setInterval(function() {
+	    		//changes to next slide every 10 seconds
+	    		$('#missionStatements.carousel').carousel('next')
+	   			}, 10000)
+		}
     })
 
-	$('#missionStatements.carousel').carousel('set','0')
 	findSetHeight()
 	
 
-    setInterval(function() {
-    	//changes to next slide every 10 seconds
-    	$('#missionStatements.carousel').carousel('next')
-   		}, 10000)
+    
 
 
 
