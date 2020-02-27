@@ -150,13 +150,8 @@ $(document).ready( f => {
 			$('#nav-2').hide()
 		}
 
-
     	findSetHeight()
 
-    	//adapts carousel height from portrait to landscape
-		if (screen.height > screen.width){
-    		findSetHeight()	
-		}
 	}
 
 	// initial call of resize functions
@@ -234,7 +229,10 @@ $(document).ready( f => {
 	//sets the carousel at the last slide
 	$('#missionStatements.carousel').carousel('set', 7)
 
-    
+	//adjusts carousel height when screen orientation changes
+    window.onorientationchange = () => {
+    	findSetHeight()
+    }
 
 
 
