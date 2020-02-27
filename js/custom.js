@@ -150,7 +150,13 @@ $(document).ready( f => {
 			$('#nav-2').hide()
 		}
 
+
     	findSetHeight()
+
+    	//adapts carousel height from portrait to landscape
+		if (screen.height > screen.width){
+    		findSetHeight()	
+		}
 	}
 
 	// initial call of resize functions
@@ -191,6 +197,7 @@ $(document).ready( f => {
 	$('#gallery').children('.divider').css({'margin-top':'40px'})
 	$('#contact').children('.divider').css({'margin-top':'40px'})
 
+	//scrolls to the top of the page
 	$('.back2top').click( f => {
 		$("#wrapper").scrollTop(0)
 	})
@@ -200,32 +207,32 @@ $(document).ready( f => {
 	})
 
 
-
-	var slideQueue = setInterval(function() {
-    	//changes to next slide every 10 seconds
+	var first = true
+	var slideQueue = setInterval( () => {
+    	//changes immediately to next slide for the first cycle, moving it from the 7th to the 1st
     	$('#missionStatements.carousel').carousel('next')
-   		}, 10000)
-
+    	first = false
+   		}, 100)
 
 	$('#missionStatements').carousel({
 	    fullWidth: true,
 	    indicators: true,
 	    duration: 100,
-	    onCycleTo: function(){
-	    	//finds height of slide and adjusts height of carousel
-	    	findSetHeight()
-	    	//resets the slide queue
-	    	clearInterval(slideQueue)
-	    	slideQueue = setInterval(function() {
-	    		//changes to next slide every 10 seconds
-	    		$('#missionStatements.carousel').carousel('next')
-	   			}, 10000)
+	    onCycleTo: () => {
+	    	if(first != true) {
+		    	//finds height of slide and adjusts height of carousel
+		    	findSetHeight()
+		    	//resets the slide queue
+		    	clearInterval(slideQueue)
+		    	slideQueue = setInterval( () => {
+		    		//changes to next slide every 10 seconds
+		    		$('#missionStatements.carousel').carousel('next')
+		   			}, 10000)
+		    }
 		}
     })
-
-	$('#missionStatements.carousel').carousel('set', 0)
-	findSetHeight()
-	
+	//sets the carousel at the last slide
+	$('#missionStatements.carousel').carousel('set', 7)
 
     
 
