@@ -1,431 +1,420 @@
 /*---Nav-Bars---*/
 
-html, body{
-	height: 100%;
-	width: 100%;
-	background-image: url('../images/background.jpg');
-	background-size: cover;
-	background-attachment: fixed;
-	background-position: center;
-	font-family: 'Alegreya SC';
-	position: fixed;
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-image: url('../images/background.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  font-family: 'Alegreya SC';
+  position: fixed;
 }
 
 a {
- color: orange;
+  color: orange;
 }
 
 #wrapper {
-	width: 100%;
-	height: 100%;
-	overflow: scroll;
-
+  width: 100%;
+  height: 100%;
+  overflow: scroll;
 }
 
 nav {
-	text-shadow: 1px 1px black;
-	background-color: rgba(0, 0, 0, 0.4);
-/*	opacity: .8;*/
-	border: 1px solid orange;
+  text-shadow: 1px 1px black;
+  background-color: rgba(0, 0, 0, 0.4);
+  /*	opacity: .8;*/
+  border: 1px solid orange;
 }
 
 #nav-1 {
-	height: 185px;
+  height: 185px;
 }
 
 nav ul a {
-	color: white;
-	font-size: 20px;
-	height: 66px;
-	position: relative;
-	padding: 0px 14px;
+  color: white;
+  font-size: 20px;
+  height: 66px;
+  position: relative;
+  padding: 0px 14px;
 }
 
-
 .brand-logo .logo1 {
-	height: 179px;
-	margin-top: 3px;
+  height: 179px;
+  margin-top: 3px;
 }
 
 .logo2 {
-	height: 60px;
-	width: 207px;
-	margin: 13px auto;
+  height: 60px;
+  width: 207px;
+  margin: 13px auto;
 }
 
 .brand-logo .logo2 {
-	height: 77px;
-	width: 250px;
-	position: absolute;
-	top: 168px;
-	left: -35px;
+  height: 77px;
+  width: 250px;
+  position: absolute;
+  top: 168px;
+  left: -35px;
 }
 
 #nav-contact {
-	height: 119px;
+  height: 119px;
 }
 
-#tocall{
-	margin-top: 20px;
+#tocall {
+  margin-top: 20px;
 }
 
 #toemail {
-	position: relative;
-	z-index: 100;
+  position: relative;
+  z-index: 100;
 }
 
 #tolinkedin {
-	position: relative;
-	z-index: 0;
+  position: relative;
+  z-index: 0;
 }
 
-#nav-contact p { 
-	color: orange;
-	height: 0px;
-	margin: 0px;
-	margin-bottom: 30px;
+#nav-contact p {
+  color: orange;
+  height: 0px;
+  margin: 0px;
+  margin-bottom: 30px;
 }
 
 #tofb {
-	margin-right: 0px; 
+  margin-right: 0px;
 }
 
-#nav-contact p:hover { 
-	text-decoration: underline;
+#nav-contact p:hover {
+  text-decoration: underline;
 }
 
 #nav-contact i:hover {
-	color: orange;
+  color: orange;
 }
 
 #nav-contact span:hover {
-	color: orange;
+  color: orange;
 }
 
 #nav-2 {
-	opacity: .8;
+  opacity: 0.8;
 }
 
 .collapsible-header {
-	background-color: orange;
-	color: white;
-	text-shadow: 1px 1px black;
-	font-size: 22px;
+  background-color: orange;
+  color: white;
+  text-shadow: 1px 1px black;
+  font-size: 22px;
 }
 
 .collapsible-header:hover {
-	opacity: .9;
+  opacity: 0.9;
 }
 
 .collapsible-body {
-	padding: 0px;
+  padding: 0px;
 }
 
-
 #services ul li {
-	font-size: 33px;
-	color: white;
-	text-shadow: 1px 1px black;
-	margin: 13px 0px;
+  font-size: 33px;
+  color: white;
+  text-shadow: 1px 1px black;
+  margin: 13px 0px;
 }
 
 #services .card-content {
-	color: white;
-	font-size: 20px;
+  color: white;
+  font-size: 20px;
 }
 
 #services .card-title {
-	width: 100%;
-	font-size: 27px;
-	background-color: rgba(0, 0, 0, 0.5);
-	text-shadow: 1px 1px black;
+  width: 100%;
+  font-size: 27px;
+  background-color: rgba(0, 0, 0, 0.5);
+  text-shadow: 1px 1px black;
 }
 
 #services .card img {
-	opacity: .9;
-	box-shadow: 0px 0px 40px;
+  opacity: 0.9;
+  box-shadow: 0px 0px 40px;
 }
 
-
 .collection a.collection-item {
-	color: white;
-	text-shadow: .5px .5px black;
-	font-size: 17px;
-	border-bottom: none;
-	background-color: rgba(0, 0, 0, 0.4);
+  color: white;
+  text-shadow: 0.5px 0.5px black;
+  font-size: 17px;
+  border-bottom: none;
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 .collection .collection-item.active {
-	color: orange;
-	background-color: rgba(0, 0, 0, 0.7);
+  color: orange;
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 .collection a.collection-item:not(.active):hover {
-	background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 .img-container {
-	max-width: 300px;
-	margin: auto;
+  max-width: 300px;
+  margin: auto;
 }
 
 #home .col.center {
-	background-color: rgba(0, 0, 0, 0.4);
-	float: none;
-	width: 90%;
-	margin: auto;
-	padding: 20px;
+  background-color: rgba(0, 0, 0, 0.4);
+  float: none;
+  width: 90%;
+  margin: auto;
+  padding: 20px;
 }
 
 hr {
-	border: 1px solid black;
-	opacity: .4;
+  border: 1px solid black;
+  opacity: 0.4;
 }
 
-
 #missionStatements p:last-child {
-	margin-bottom: 0px;
+  margin-bottom: 0px;
 }
 
 #missionStatements p:first-child {
-	margin-top: 17px;
+  margin-top: 17px;
 }
 
 @media only screen and (max-width: 1200px) {
-	nav ul a {
-		padding: 0px 12px;
-	}
+  nav ul a {
+    padding: 0px 12px;
+  }
 }
 
 @media only screen and (max-width: 1154px) {
-	#missionStatements p:first-child {
-	margin-top: 8px;
-	}
-	nav ul a {
-		padding: 0px 10px;
-	}
+  #missionStatements p:first-child {
+    margin-top: 8px;
+  }
+  nav ul a {
+    padding: 0px 10px;
+  }
 }
 
 @media only screen and (max-width: 1100px) {
-	nav ul a {
-		padding: 0px 8px;
-	}
+  nav ul a {
+    padding: 0px 8px;
+  }
 }
 
 @media only screen and (max-width: 950px) {
-	#missionStatements p:first-child {
-	margin-top: 0px;
-	}
+  #missionStatements p:first-child {
+    margin-top: 0px;
+  }
 }
 
 #missionStatements.carousel.carousel-slider .carousel-item {
-	height: auto;
-	min-height: unset;
-	visibility: hidden;
+  height: auto;
+  min-height: unset;
+  visibility: hidden;
 }
 
 #missionStatements.carousel.carousel-slider .carousel-item.active {
-	visibility: visible;
+  visibility: visible;
 }
 
 #home img {
-	max-width: 300px;
+  max-width: 300px;
 }
 
 #home h4 {
-	color: white;
-	text-shadow: 1px 1px black;
+  color: white;
+  text-shadow: 1px 1px black;
 }
 
 #home span {
-	color: orange;
-	text-shadow: 1px 1px black;
-	font-size: 30px;
+  color: orange;
+  text-shadow: 1px 1px black;
+  font-size: 30px;
 }
 
 #home p {
-	color: white;
-	text-shadow: 1px 1px black;
-	font-size: 25px;
+  color: white;
+  text-shadow: 1px 1px black;
+  font-size: 25px;
 }
 
 #title {
-	font-size: 22px;
+  font-size: 22px;
 }
 
 #name {
-	font-size: 44px;
-	text-shadow: 1px 1px orange;
-	font-style: italic;
-	font-family: cursive;
+  font-size: 38px;
+  text-shadow: 1px 1px orange;
+  font-style: italic;
+  font-family: cursive;
 }
 
 #services .collapsible {
-	opacity: .8;
+  opacity: 0.8;
 }
-
-
 
 ul.collapsible.popout li .collapsible-header {
-	border: 5px outset #2c79c7;
-	margin-top: 50px;
+  border: 5px outset #2c79c7;
+  margin-top: 50px;
 }
 
-
-
 ul.collapsible.popout li .collapsible-body {
-	background-color: #f9fbfa;
-} 
+  background-color: #f9fbfa;
+}
 
 .collapsible a {
-	font-size: 20px;
+  font-size: 20px;
 }
 
 .collapsible a:hover {
-	text-decoration: underline;
+  text-decoration: underline;
 }
 
 #gallery h4 {
-	color: #2c79c7;
-	text-shadow: 1px 1px black;
-	font-size: 30px;
-	text-align: center;
+  color: #2c79c7;
+  text-shadow: 1px 1px black;
+  font-size: 30px;
+  text-align: center;
 }
 #gallery p {
-	color: #c85d59;
-	text-shadow: 1px 1px black;
-	font-size: 25px;
-	text-align: center;
+  color: #c85d59;
+  text-shadow: 1px 1px black;
+  font-size: 25px;
+  text-align: center;
 }
 
 #galleryPictures img {
-	width: 100%;
-	opacity: .9;
+  width: 100%;
+  opacity: 0.9;
 }
 
 .tabs {
-	background-color: transparent;
-	width: unset;
+  background-color: transparent;
+  width: unset;
 }
 
 .tabs .tab a {
-	color: white;
-	font-size: 22px;
-	text-shadow: .5px .5px black;
-	opacity: .9;
+  color: white;
+  font-size: 22px;
+  text-shadow: 0.5px 0.5px black;
+  opacity: 0.9;
 }
 
 .tabs .tab a.active {
-	color: white;
+  color: white;
 }
 
 .tabs .tab a:hover {
-	color: white;
+  color: white;
 }
 
 .tabs .indicator {
-	background-color: white;
+  background-color: white;
 }
 
 #galleryPictures .row .col:first-child {
-	margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 #contact .card {
-	overflow: scroll;
+  overflow: scroll;
 }
 
-
 .card {
-	background-color: rgba(0, 0, 0, 0.4);
-	text-align: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  text-align: center;
 }
 
 .card .card-action {
-	font-size: 25px;
-	padding: 16px 7px;
+  font-size: 25px;
+  padding: 16px 7px;
 }
 
 .card-action span {
-	color: orange;
+  color: orange;
 }
 
 .card-title {
-	color: white;
+  color: white;
 }
 
-.card .card-action a:not(.btn):not(.btn-large):not(.btn-large):not(.btn-floating) {
-	color: orange;
+.card
+  .card-action
+  a:not(.btn):not(.btn-large):not(.btn-large):not(.btn-floating) {
+  color: orange;
 }
-
 
 .pages {
-	margin-top: 25px;
+  margin-top: 25px;
 }
 
 .carousel {
-	top: -55px;
+  top: -55px;
 }
 
-
 .carousel .carousel-item {
-	width: 400px;
-	z-index: 0;
-
+  width: 400px;
+  z-index: 0;
 }
 
 .carousel-item img {
-	opacity: .9
+  opacity: 0.9;
 }
 
-
 .header {
-	text-align: center;
-	font-size: 40px;
-	color: white;
-	text-shadow: 1px 1px 4px black;
+  text-align: center;
+  font-size: 40px;
+  color: white;
+  text-shadow: 1px 1px 4px black;
 }
 
 .card-action .email {
-	font-size: 20px;
-	overflow: hidden;
+  font-size: 20px;
+  overflow: hidden;
 }
 
 #map {
-	max-height: 500px;
-	max-width: 500px;
-	min-height: 354px;
-	min-width: 227px;
-	margin-top: 7.5px;
-	opacity: .7;
+  max-height: 500px;
+  max-width: 500px;
+  min-height: 354px;
+  min-width: 227px;
+  margin-top: 7.5px;
+  opacity: 0.7;
 }
 
 footer {
-	margin-top: 50px;
-	text-shadow: .5px .5px black;
-	border: 1px solid orange;
+  margin-top: 50px;
+  text-shadow: 0.5px 0.5px black;
+  border: 1px solid orange;
 }
 
 .page-footer {
-	background-color: rgba(0, 0, 0, 0.5);
-	color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
 }
 
 .page-footer p {
-	color: orange;
+  color: orange;
 }
 
 .back2top:hover {
-	text-decoration: underline;
-	cursor: pointer;
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 .footer-links ul li a:hover {
-	text-decoration: underline;
+  text-decoration: underline;
 }
 
-.card .card-action a:not(.btn):not(.btn-large):not(.btn-large):not(.btn-floating) {
-	margin-right: 0px;
+.card
+  .card-action
+  a:not(.btn):not(.btn-large):not(.btn-large):not(.btn-floating) {
+  margin-right: 0px;
 }
-
-
