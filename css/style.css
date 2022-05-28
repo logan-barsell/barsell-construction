@@ -249,11 +249,12 @@ hr {
   font-size: 22px;
 }
 
-#name {
+.name {
   font-size: 38px;
   text-shadow: 1px 1px orange;
   font-style: italic;
   font-family: cursive;
+  padding-top: 10px;
 }
 
 #services .collapsible {
