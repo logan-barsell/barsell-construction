@@ -245,8 +245,9 @@ hr {
   font-size: 25px;
 }
 
-#title {
+.title {
   font-size: 22px;
+  padding-top: 20px;
 }
 
 .name {
@@ -254,7 +255,6 @@ hr {
   text-shadow: 1px 1px orange;
   font-style: italic;
   font-family: cursive;
-  padding-top: 10px;
 }
 
 #services .collapsible {
